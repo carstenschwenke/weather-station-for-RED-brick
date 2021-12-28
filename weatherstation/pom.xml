@@ -13,8 +13,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>weatherstation</name>
 	<description>Weather-Station</description>
+
+	<!-- define the packaging type -->
+	<packaging>jar</packaging>
+
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -22,6 +26,11 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.tinkerforge</groupId>
+			<artifactId>tinkerforge</artifactId>
+			<version>2.1.31</version>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
